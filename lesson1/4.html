@@ -28,7 +28,18 @@
 <script>
   "use strict";
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
+  const userNumber = prompt("Введите число"); //запрашиваем число
+  
+  const units = userNumber % 10; //Получаем единицы остатком от деления на 10
+
+  const dozens = Math.floor((userNumber % 100) / 10); //округляем дробные вниз
+  
+  const hundreds = Math.floor((userNumber % 1000) / 100);
+
+  alert(`количество сотен: ${hundreds}, десятков: ${dozens}, единиц: ${units}`)
+
+  
+
 </script>
 </body>
 </html>
